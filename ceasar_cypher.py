@@ -25,7 +25,7 @@ for character in message:
             translatedIndex = translatedIndex + len(SYMBOLS)
         translated += SYMBOLS[translatedIndex]
     else:
-        translated += symbol
+        translated += character
 
 print(translated)
 pyperclip.copy(translated)
