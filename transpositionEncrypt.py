@@ -6,7 +6,7 @@ def main():
     myMessage = input('Message to encrypt: ')
     myKey = input('Key: ')
     ciphertext = encryptMessage(myKey, myMessage)
-    print(ciphertext + '|')
+    print(ciphertext + '|') #in case there are blank spaces at the end of the ciphertext
     pyperclip.copy(ciphertext)
 
 def encryptMessage(key,message):
